@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_dark_gradient"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Title Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="36dp"
+            android:layout_marginBottom="24dp">
+
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@android:drawable/ic_media_previous"
+                android:tint="@color/text_white"
+                android:clickable="true"
+                android:focusable="true"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/dashboard"
+                android:textColor="@color/text_white"
+                android:textSize="34sp"
+                android:textStyle="bold"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+        <!-- This day -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:background="@drawable/bg_menu_card"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="16dp"
+            android:layout_marginBottom="14dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/this_day"
+                android:textColor="@color/text_dark"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvDayAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_blue_badge"
+                android:text="₱ 420"
+                android:textColor="@color/text_white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"/>
+        </LinearLayout>
+
+        <!-- This week -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:background="@drawable/bg_menu_card"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="16dp"
+            android:layout_marginBottom="14dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/this_week"
+                android:textColor="@color/text_dark"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvWeekAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_blue_badge"
+                android:text="₱ 1,950"
+                android:textColor="@color/text_white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"/>
+        </LinearLayout>
+
+        <!-- This month -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:background="@drawable/bg_menu_card"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="16dp"
+            android:layout_marginBottom="14dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/this_month"
+                android:textColor="@color/text_dark"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvMonthAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_blue_badge"
+                android:text="₱ 1,950"
+                android:textColor="@color/text_white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"/>
+        </LinearLayout>
+
+        <!-- This year -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:background="@drawable/bg_menu_card"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="16dp"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/this_year"
+                android:textColor="@color/text_dark"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvYearAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_blue_badge"
+                android:text="₱ 1,950"
+                android:textColor="@color/text_white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"/>
+        </LinearLayout>
+
+        <!-- Expense History header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/expense_history"
+                android:textColor="@color/text_white"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvViewAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/view_all"
+                android:textColor="@color/blue_link"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:clickable="true"
+                android:focusable="true"/>
+        </LinearLayout>
+
+        <!-- Expense History table -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_menu_card"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Food" android:textColor="@color/text_dark" android:textSize="15sp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="₱ 1,400" android:textColor="@color/text_dark" android:textSize="15sp"/>
+            </LinearLayout>
+
+            <View android:layout_width="match_parent" android:layout_height="0.5dp" android:background="@color/divider"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Transportation" android:textColor="@color/text_dark" android:textSize="15sp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="₱ 50" android:textColor="@color/text_dark" android:textSize="15sp"/>
+            </LinearLayout>
+
+            <View android:layout_width="match_parent" android:layout_height="0.5dp" android:background="@color/divider"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Entertainment" android:textColor="@color/text_dark" android:textSize="15sp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="₱ 350" android:textColor="@color/text_dark" android:textSize="15sp"/>
+            </LinearLayout>
+
+            <View android:layout_width="match_parent" android:layout_height="0.5dp" android:background="@color/divider"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Bills &amp; Others" android:textColor="@color/text_dark" android:textSize="15sp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="₱ 100" android:textColor="@color/text_dark" android:textSize="15sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Space android:layout_width="match_parent" android:layout_height="24dp"/>
+
+    </LinearLayout>
+</ScrollView>

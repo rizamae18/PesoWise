@@ -1,0 +1,6 @@
+bash
+
+mkdir -p /home/claude/PesoWise/app/src/main/{java/com/pesowise/app/{ui/{login,register,home,dashboard,addexpense,history,category,budgettips,profile,settings,notifications},data/{model,repository,database},util},res/{layout,drawable,values,menu,font}}
+Output
+
+exit code 0

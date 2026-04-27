@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_dark_gradient"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Title -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="36dp"
+            android:layout_marginBottom="8dp">
+
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@android:drawable/ic_media_previous"
+                android:tint="@color/text_white"
+                android:clickable="true"
+                android:focusable="true"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Profile"
+                android:textColor="@color/text_white"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+        <!-- Teal form card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_teal_card"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:gravity="center_horizontal">
+
+            <!-- Avatar -->
+            <FrameLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/bg_avatar"
+                    android:src="@android:drawable/ic_menu_myplaces"
+                    android:tint="#FF5C4DB1"
+                    android:padding="16dp"/>
+            </FrameLayout>
+
+            <!-- Email -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email Address"
+                android:textColor="@color/text_dark"
+                android:textSize="13sp"
+                android:layout_marginBottom="4dp"/>
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@drawable/bg_input_field"
+                android:text="admin@gmail.com"
+                android:textColor="@color/text_dark"
+                android:textSize="15sp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- Username -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:textColor="@color/text_dark"
+                android:textSize="13sp"
+                android:layout_marginBottom="4dp"/>
+
+            <EditText
+                android:id="@+id/etUsername"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@drawable/bg_input_field"
+                android:text="Admin"
+                android:textColor="@color/text_dark"
+                android:textSize="15sp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:singleLine="true"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- Phone -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone Number"
+                android:textColor="@color/text_dark"
+                android:textSize="13sp"
+                android:layout_marginBottom="4dp"/>
+
+            <EditText
+                android:id="@+id/etPhone"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@drawable/bg_input_field"
+                android:text="09123456789"
+                android:textColor="@color/text_dark"
+                android:textSize="15sp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:inputType="phone"
+                android:singleLine="true"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- Password -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:textColor="@color/text_dark"
+                android:textSize="13sp"
+                android:layout_marginBottom="4dp"/>
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@drawable/bg_input_field"
+                android:text="********"
+                android:textColor="@color/text_dark"
+                android:textSize="15sp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:layout_marginBottom="20dp"/>
+
+            <!-- Save Button -->
+            <Button
+                android:id="@+id/btnSaveChanges"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@drawable/bg_green_button"
+                android:text="@string/save_changes"
+                android:textColor="@color/text_white"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:stateListAnimator="@null"/>
+
+        </LinearLayout>
+
+        <Space android:layout_width="match_parent" android:layout_height="32dp"/>
+
+    </LinearLayout>
+</ScrollView>

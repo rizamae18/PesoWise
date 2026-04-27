@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_dark_gradient"
+    android:orientation="vertical">
+
+    <!-- Title -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="52dp"
+        android:paddingBottom="16dp">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@android:drawable/ic_media_previous"
+            android:tint="@color/text_white"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/expense_history"
+            android:textColor="@color/text_white"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+    <!-- Filter chips -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:id="@+id/chipSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_teal_chip"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:layout_marginEnd="10dp"
+            android:clickable="true"
+            android:focusable="true">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Search" android:textColor="@color/text_dark" android:textSize="14sp" android:textStyle="bold"/>
+            <ImageView android:layout_width="18dp" android:layout_height="18dp" android:src="@android:drawable/ic_menu_search" android:tint="@color/text_dark" android:layout_marginStart="6dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/chipDate"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_teal_chip"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:layout_marginEnd="10dp"
+            android:clickable="true"
+            android:focusable="true">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Date" android:textColor="@color/text_dark" android:textSize="14sp" android:textStyle="bold"/>
+            <ImageView android:layout_width="18dp" android:layout_height="18dp" android:src="@android:drawable/ic_menu_today" android:tint="@color/text_dark" android:layout_marginStart="6dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/chipCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_teal_chip"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:clickable="true"
+            android:focusable="true">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Category" android:textColor="@color/text_dark" android:textSize="14sp" android:textStyle="bold"/>
+            <ImageView android:layout_width="18dp" android:layout_height="18dp" android:src="@android:drawable/arrow_down_float" android:tint="@color/text_dark" android:layout_marginStart="6dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvExpenses"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:clipToPadding="false"/>
+
+</LinearLayout>

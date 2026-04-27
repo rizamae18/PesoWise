@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Background - dark gradient -->
+    <color name="bg_dark">#FF2C2C2C</color>
+    <color name="bg_darker">#FF1A1A1A</color>
+    <color name="bg_medium">#FF3A3A3A</color>
+
+    <!-- Teal / Cyan accent -->
+    <color name="teal_primary">#FF00C9B1</color>
+    <color name="teal_dark">#FF00A896</color>
+
+    <!-- Green button -->
+    <color name="green_button">#FF4CAF50</color>
+    <color name="green_button_dark">#FF388E3C</color>
+
+    <!-- Blue amount badge -->
+    <color name="blue_badge">#FF1565C0</color>
+    <color name="blue_badge_text">#FFFFFFFF</color>
+    <color name="blue_link">#FF2196F3</color>
+
+    <!-- Text colors -->
+    <color name="text_white">#FFFFFFFF</color>
+    <color name="text_light_gray">#FFB0B0B0</color>
+    <color name="text_dark">#FF1A1A1A</color>
+    <color name="text_hint">#FF888888</color>
+    <color name="text_red_tip">#FFCC0000</color>
+
+    <!-- Input field background -->
+    <color name="input_bg">#FFD0D0D0</color>
+    <color name="input_bg_light">#FFE0E0E0</color>
+
+    <!-- Card backgrounds -->
+    <color name="card_bg">#FF424242</color>
+    <color name="card_light">#FFD6D6D6</color>
+
+    <!-- Expense history item background (teal) -->
+    <color name="history_item_bg">#FF00C9B1</color>
+
+    <!-- Separator -->
+    <color name="divider">#FF555555</color>
+
+    <!-- Red / Error -->
+    <color name="red_delete">#FFCC0000</color>
+
+    <!-- Purple toggle -->
+    <color name="toggle_purple">#FF7C4DFF</color>
+
+    <!-- Transparent -->
+    <color name="transparent">#00000000</color>
+</resources>
